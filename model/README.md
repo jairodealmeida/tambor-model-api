@@ -5,10 +5,11 @@ Automatically exported from code.google.com/p/easy-gpa
 ## CRUD API(Create, read, update and delete)
 ### Google Persistence API
 
-![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)
-[PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95LLB4KYSQW2);
+[![Donate To CharityWate Now Help a good cause](https://media1.tenor.com/images/5da95f8d44b36a5b55f2bc91eb0ac767/tenor.gif?itemid=14309950)](https://my.charitywater.org/charisma_on_command/charisma-on-command-fundraiser)
+[![Donate To CharityWate Now Help a good cause](https://cdn.streamlabs.com/users/22097922/library/2ecn0nk.gif)](https://my.charitywater.org/charisma_on_command/charisma-on-command-fundraiser)
+**CLICK TO DONATE \o/ **
 
-**IRC** #easy-gpa<br>
+**IRC** #easy-gpa<br> 
 **Group** http://groups.google.com/group/easy-gpa<br>
 <br>
 **Easy-gpa-android user guide** <br>
@@ -20,26 +21,26 @@ To set the database instance to your project using easy-gpa-android.<br>
 In easy-gpa-android.jar library has a class named Entity <br>
 which you can make your regular beans extends in order to use easy-gpa functionalities.<br>
 Create a regular class with a suggestive name representing a database table, <br>
-make it extends Entity class (from easy-gpa.jar) and annotate it with annonation.
-```JAVA
+make it extends Entity class (from easy-gpa.jar) and annotate it with annonation. 
+```JAVA 
 @GPAEntity(name="table_name")
-```
+``` 
 After that, you have to annotate your class attributes’ getters and setters according to your database table’s fields. <br>
 The first thing to consider is the primary key. <br>
 Make sure to annotate the table’s id with annotation.
-```JAVA
+```JAVA 
 @GPAPrimaryKey(name="id_name", ignore=true)
 ```
 The other regular fields must be annotated with annotation.
-```JAVA
+```JAVA 
 @GPAField(name="field_name")
-```
+``` 
 **Example**: The following example was made using this sqlite script: <br>
 ```SQL
 CREATE TABLE [tb_usuario] (
-  [id] integer primary key autoincrement NOT NULL,
-  [nome_completo] VARCHAR NOT NULL,
-  [nome_usuario] VARCHAR NOT NULL,
+  [id] integer primary key autoincrement NOT NULL, 
+  [nome_completo] VARCHAR NOT NULL, 
+  [nome_usuario] VARCHAR NOT NULL, 
   [senha] VARCHAR NOT NULL);
 ```
 After this, a class with the table characterizes was created, extending Entity class to use it’s methods.<br>
@@ -64,8 +65,8 @@ public class Usuario extends Entity{
 	private String senha;
 
 	/**
-	 * Used by insert without id, database are responsible
-	 * to generate a sequential id to primary key
+	 * Used by insert without id, database are responsible 
+	 * to generate a sequential id to primary key 
 	 * @param nomeCompleto
 	 * @param nomeUsuario
 	 * @param senhaCharacter
@@ -121,7 +122,7 @@ public class Usuario extends Entity{
 }
 
 ```
-With this entity created, you can try this android test code
+With this entity created, you can try this android test code 
 ```JAVA
 import java.util.List;
 import android.test.ActivityInstrumentationTestCase2;
@@ -132,7 +133,7 @@ import br.com.slv.database.dao.model.TransferObject;
 
 public class EntityTest extends
 ActivityInstrumentationTestCase2<MainActivity>{
-
+	
 	private MainActivity mActivity;
 
 	public EntityTest() {
@@ -142,7 +143,7 @@ ActivityInstrumentationTestCase2<MainActivity>{
 	@Override
 	protected void setUp() throws Exception {
 		super.setUp();
-		mActivity = this.getActivity();
+		mActivity = this.getActivity();	
 		mActivity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
@@ -161,7 +162,7 @@ ActivityInstrumentationTestCase2<MainActivity>{
 					"(senha text,nome_usuario text," +
 					"nome_completo text," +
 					"id_device integer," +
-					"id integer primary key autoincrement );", result);
+					"id integer primary key autoincrement );", result);			
 		} catch (Exception e) {
 			fail("not pass here " + e.getLocalizedMessage());
 			e.printStackTrace();
@@ -173,7 +174,7 @@ ActivityInstrumentationTestCase2<MainActivity>{
 			Repositorio repository = new Repositorio(mActivity, Usuario.class,"teste",1);
 			String result = repository.deleteScript();
 			assertNotNull(result);
-			assertEquals("drop table if exists tb_usuario;", result);
+			assertEquals("drop table if exists tb_usuario;", result);			
 		} catch (Exception e) {
 			fail("not pass here " + e.getLocalizedMessage());
 			e.printStackTrace();
@@ -191,7 +192,7 @@ ActivityInstrumentationTestCase2<MainActivity>{
 		}
 
 	}
-
+	
 	public void testUpdateAccept1(){
 		try {
 			Repositorio repository = new Repositorio(mActivity, Usuario.class,"teste",1);
@@ -207,7 +208,7 @@ ActivityInstrumentationTestCase2<MainActivity>{
 		}
 
 	}
-
+	
 	public void testDeleteAccept1(){
 		try {
 			Repositorio repository = new Repositorio(mActivity, Usuario.class,"teste",1);
@@ -223,7 +224,7 @@ ActivityInstrumentationTestCase2<MainActivity>{
 		}
 
 	}
-
+	
 	public void testSelectAccept1(){
 		try {
 			Repositorio repository = new Repositorio(mActivity, Usuario.class,"teste",1);
@@ -235,19 +236,26 @@ ActivityInstrumentationTestCase2<MainActivity>{
 			e.printStackTrace();
 		}
 
-	}
+	}	
 }
 ```
 By doing these tests, you will be creating an Entity instance to transact information from/to the configured database, <br>
 using a regular DBMS operations (insert update and delete).<br>
 This is an easy, simple and elegant form to manipulate/transact statements. No more hard DAO implementations. <br>
 
-see to:
+## Youtube Code History
+
+[![History of coding of EASY-GPA API - Credits the Gource AROUND incredible functionality, thanks](https://img.youtube.com/vi/_lfHKMuI1JI/0.jpg)](https://www.youtube.com/watch?v=_lfHKMuI1JI)
+
+## Youtube Playlist
+[https://www.youtube.com/playlist?list=PLLAE7O8grxj-V3W1D284SG1WNc99fgxH2]
+
+
+## Old Versions, see to:
 [http://code.google.com/p/easy-gpa-spatial/]
 
-##Guide authors: <br>
+## Guide authors: <br>
 **Jairo de Almeida Since: v2 - 02/08/2011** <br>
 **Willian da Costa Chimura : v3 - 06/09/2011** <br>
 **Jairo de Almeida Since: v4 - 17/11/2011** <br>
 **Jairo de Almeida Since: v5 - 17/06/2014** <br>
-**Jairo de Almeida Since: v6 - 30/06/2016** <br>
