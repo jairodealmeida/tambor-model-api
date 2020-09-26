@@ -6,7 +6,7 @@ Automatically exported from code.google.com/p/easy-gpa
 ### Google Persistence API
 
 [![Donate To CharityWate Now Help a good cause](https://media1.tenor.com/images/5da95f8d44b36a5b55f2bc91eb0ac767/tenor.gif?itemid=14309950)](https://my.charitywater.org/charisma_on_command/charisma-on-command-fundraiser)
-[![Donate To CharityWate Now Help a good cause](https://cdn.streamlabs.com/users/22097922/library/2ecn0nk.gif)](https://my.charitywater.org/charisma_on_command/charisma-on-command-fundraiser)
+[![Donate To CharityWate Now Help a good cause](https://cdn.streamlabs.com/users/22097922/library/2ecn0nk.gif =80x)](https://my.charitywater.org/charisma_on_command/charisma-on-command-fundraiser)
 **CLICK TO DONATE \o/ **
 
 **IRC** #easy-gpa<br> 
