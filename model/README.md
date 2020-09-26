@@ -5,10 +5,11 @@ Automatically exported from code.google.com/p/easy-gpa
 ## CRUD API(Create, read, update and delete)
 ### Google Persistence API
 
-[![Donate To CharityWate Now Help a good cause][(https://media1.tenor.com/images/5da95f8d44b36a5b55f2bc91eb0ac767/tenor.gif?itemid=14309950)](https://my.charitywater.org/charisma_on_command/charisma-on-command-fundraiser)
 
+<img src="https://media1.tenor.com/images/5da95f8d44b36a5b55f2bc91eb0ac767/tenor.gif?itemid=14309950" width="200" height="200">
 <img src="https://cdn.streamlabs.com/users/22097922/library/2ecn0nk.gif" width="80" height="40">
-**CLICK TO DONATE \o/ **
+
+[CLICK TO DONATE To CharityWate Now \o/](https://my.charitywater.org/charisma_on_command/charisma-on-command-fundraiser)
 
 **IRC** #easy-gpa<br> 
 **Group** http://groups.google.com/group/easy-gpa<br>
